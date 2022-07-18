@@ -22,10 +22,10 @@ router.get("/", (req, res) => {
 */
 router.post("/additem", (req, res) => {
   const id = generateId();
-  // const title = "Google";
-  // const description = "Google is a search engine.";
-  // const URL = "www.google.com";
-  const newItem = Object.assign({ id }, req.body);
+  const title = "Google";
+  const description = "Google is a search engine.";
+  const URL = "www.google.com";
+  const newItem = Object.assign({ id,title,description,URL }, req.body);
   content.push(newItem);
   return res.json({
     message: "Item added successfully",
