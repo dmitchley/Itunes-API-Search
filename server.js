@@ -1,8 +1,7 @@
 const express = require("express");
 const cors = require("cors");
 const morgan = require("morgan");
-import dotenv from "dotenv";
-dotenv.config();
+ 
 // importing the routes
 const routes = require("./routes/index");
 const helmet = require("helmet");
